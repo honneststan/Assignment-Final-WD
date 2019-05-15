@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="./css/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400" rel="stylesheet">
+	 <meta charset="utf-8">
+</head>
+<body>
+	<!--website header-->
+	<header>
+		<!--main navigation-->
+		<nav>
+			<div class="po-container po-align-center" >
+			<a class="po-logo" href="#">E&T</a>
+			<ul class="po-navigation">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="test.html">Testimonials</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+		</div>
+		</nav>
+		<!-- header content-->
+		<script type="text/javascript">
+		var i=0;
+		var myPic=["img/banner1.jpg","img/banner2.jpg","img/banner3.jpg"];
+		length=myPic.length;
+		setInterval(choosePic,4000);
+		function choosePic(){
+			document.getElementById("cover").src=myPic[i];
+			i++;
+			if(i==myPic.length){i=0;}
+		}
+
+	</script>
+		<section class="po-header-content">
+			<div class="po-header-text">
+			<h1 class="po-pulsate">Eats & Treats</h1>
+			<h2>We serve &nbsp;<span class="type"></span>
+			</h2>
+			</div>
+			<div class="po-header-banner">
+			<img src="img/banner1.jpg" width="100%" id="cover" alt="cover">
+		</div>
+
+		</section>
+	</header>
+	<!--main content-->
+	<section class="po-container3">
+    <div class="par1 partext">
+      <h1 align="center">Eats and treat</h1>
+      <p style=" font-size: 20px; color: white;" align="center">Everything we do from choosing a special coffee, to experimenting with creative donuts and hand-tossing kale salads is done with the notion that we will be serving our guest. We’ve curated the best coffee roasters from around the world and have created an extensive beverage, bakery and food menu that is truly unique to Kathmandu</p>
+    </div>
+  
+	</section>
+	<section class="po-container3">
+    <div class="par2">
+      <h1 align="center">Eats and treat</h1>
+      <p style="font-family: Gaegu; font-size: 20px; color: white;" align="center">If you can’t spell it, we don’t bake with it.
+Just like our grandmothers, we do not use any mixes, artificial preservatives, or shortening in our products. We bake our products from scratch using only the freshest and finest ingredients.</p>
+    </div>
+  
+	</section>
+	<section>
+		
+		<ul id="aw-gallery">
+                <li><img src="./img/banner1.jpg" alt="" /></li>
+                 <li><img src="./img/banner2.jpg" alt="" /></li>
+                <li><img src="./img/banner3.jpg" alt="" /></li>
+                 <li><img src="./img/banner1.jpg" alt="" /></li>
+                  <li><img src="./img/banner3.jpg" alt="" /></li>
+                   <li><img src="./img/banner1.jpg" alt="" /></li>
+                    <li><img src="./img/banner2.jpg" alt="" /></li>
+                     <li><img src="./img/banner3.jpg" alt="" /></li>
+                      <li><img src="./img/banner1.jpg" alt="" /></li>
+                       <li><img src="./img/banner2.jpg" alt="" /></li>
+                        <li><img src="./img/banner3.jpg" alt="" /></li>
+                         <li><img src="./img/banner1.jpg" alt="" /></li>
+               
+			</ul>
+	</section>
+	<br>
+	<!-- website footer-->
+	<footer>
+		 <div class="po-container po-align-center">
+            	<a class="po-logo" href="#">E&T</a>
+
+            	<ul class="po-social-icons">
+            		<li><a href="#"><i class="icon-facebook"></i></a></li>
+            		<li><a href="#"><i class="icon-twitter"></i></a></li>
+            		<li><a href="#"><i class="icon-vimeo"></i></a></li>
+            		<li><a href="#"><i class="icon-tumblr"></i></a></li>
+            	</ul>
+            </div>
+
+	</footer>
+<script  src="js/typed.js"></script>
+<script src="js/main.js"></script>
+<script>
+	var typed = new Typed(".type", {
+  strings: ["Cakes", "Coffee", "Best Bread"],
+  typeSpeed:70,
+  backSpeed:70,
+  loop:true,
+  startDelay:1000,
+  showCursor:false
+});
+</script>
+</body>
+</html>
