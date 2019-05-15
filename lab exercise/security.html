@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dipesh bc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTTP and Security</title>
+
+    <style>
+      
+      dt {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      dd {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <!--Questions and answers for HTTP and Security-->
+      <dl>
+        <dt>1.What is the Hypertext Transfer Protocol (HTTP)?</dt>
+        <dd>
+          Hypertext Transfer Protocol (HTTP) is an application-layer protocol
+          for transmitting hypermedia documents, such as HTML. It was designed
+          for communication between web browsers and web servers.
+        </dd>
+
+        <dt>2.Why is HTTP called a stateless protocol?</dt>
+        <dd>
+          HTTP is called a stateless protocol as the server does not keep any
+          data/state between 2 requests.
+        </dd>
+
+        <dt>
+          3.Describe the three phases of establishing a session using
+          client-server protocols such as HTTP.
+        </dt>
+        <dd>
+          In client-server protocols, like HTTP, sessions consist of three
+          phases:
+          <ol>
+            <li>
+              The client establishes a TCP connection (or the appropriate
+              connection if the transport layer is not TCP).
+            </li>
+            <li>The client sends its request, and waits for the answer.</li>
+            <li>
+              The server processes the request, sending back its answer,
+              providing a status code and appropriate data.
+            </li>
+          </ol>
+        </dd>
+
+        <dt>4.Describe the parameters on a get and post request.</dt>
+        <dd>
+          On a GET request, the parameters are stored in the form of name=value
+          and these parameters appear in the URL. Multiple parameters can appear
+          after the ? sign in the URL which are seperated by & sign.<br />
+          On a POST request, the parameters do not appear on the URL. POST
+          carries request parameter in message body which make it secure.
+        </dd>
+
+        <dt>
+          5.What are the HTTP response status code and What do the HTTP status
+          codes, 200, and 404 indicate?
+        </dt>
+        <dd>
+          HTTP response status codes indicate whether a specific HTTP request
+          has been successfully completed. HTTP status Codes:
+          <ul>
+            <li>200 means request has succeeded.</li>
+            <li>404 means the server cannot find the requested resource.</li>
+          </ul>
+        </dd>
+
+        <dt>6.What are HTTP cookies? Give an example.</dt>
+        <dd>
+          An HTTP cookie (web cookie, browser cookie) is a small piece of data
+          that a server sends to the user's web browser.<br />
+          Cookie: yummy_cookie=choco; tasty_cookie=strawberry<br />
+          a web server might send a cookie containing the username that was last
+          used to log into a website, so that it may be filled in automatically
+          the next time the user logs in.
+        </dd>
+
+        <dt>7.Why are cookies a security issue?</dt>
+        <dd>
+          Cookies are often used in web application to identify a user and their
+          authenticated session, so stealing a cookie can lead to hijacking the
+          authenticated user's session.
+        </dd>
+
+        <dt>8.Describe session hijacking and XSS.</dt>
+        <dd>
+          Session hijacking is nothing but a type of security attack on any of
+          the user session that is running on an internet network connection.
+          Sometimes this method of hijacking is also referred as cookie
+          hijacking. Cookies are often used in web application to identify a
+          user and their authenticated session, so stealing a cookie can lead to
+          hijacking the authenticated user's session Cross-site scripting (XSS)
+          is a security exploit which allows an attacker to inject into a
+          website malicious client-side code.
+        </dd>
+
+        <dt>9.Describe Cross-site request forgery(CSRF).</dt>
+        <dd>
+          Cross-site request forgery (CSRF)is a type of malicious exploit of a
+          website where unauthorized commands are transmitted from a user that
+          the web application trusts.
+        </dd>
+
+        <dt>
+          10.What are Cross-site HTTP requests (CORS) and what requests use
+          CORS?
+        </dt>
+        <dd>
+          Cross-Origin Resource Sharing (CORS) is a mechanism that uses
+          additional HTTP headers to tell a browser to let a web application
+          running at one origin (domain) have permission to access selected
+          resources from a server at a different origin.<br />
+          CORS is used by:
+          <ul>
+            <li>
+              Invocations of the XMLHttpRequest or Fetch APIs in a cross-site.
+            </li>
+            <li>manner, as discussed above.</li>
+            <li>Web Fonts.</li>
+            <li>WebGL textures.</li>
+            <li>Images/video frames drawn to a canvas using drawImage().</li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+  </body>
+</html>

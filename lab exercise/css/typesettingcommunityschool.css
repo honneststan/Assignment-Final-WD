@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+  }
+  
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  /* For fonts */
+  @font-face{
+      font-family: CormorantUnicase;
+      src: url("../../fonts/Cormorant_Unicase/CormorantUnicase-Regular.ttf");
+  }
+  @font-face{
+      font-family: Poppins;
+      src: url("../../fonts/Poppins/Poppins-Regular.ttf");
+  }
+    
+  html {
+    font-family: 'CormorantUnicase', serif;
+    font-size: 10px;
+  }
+  
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  section h2 + p {
+    text-indent: 15px;
+  }
+  
+  p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+  }
+  
+  /* For Links */
+  
+  a {
+    outline: none;
+  }
+  
+  a[href*="http"] {
+    padding-right: 19px;
+    background: url("../../images/external-link-52.png") no-repeat 100% 50%;
+    background-size:8px 8px;
+  }
+  
+  a:link, a:visited {
+    color: #a66;
+  }
+  
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    font-size: 2rem;
+    animation-duration: .5s;
+  }
+  /* For lists */
+  ul, ol {
+    margin: 1.6rem 0;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  ol {
+    list-style-type: lower-latin;
+  }
+  
+  /* nav menu */
+  
+  nav ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+  }
+  
+  nav li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 2.5rem;
+    border: 1px solid #a66;
+  }
+  
+  nav li a:focus, nav li a:hover {
+    color: white;
+    background: #a66;
+  }
+  
+  nav li a:active {
+    color: white;
+    background: black;
+    font-size: 2.5rem;
+  }
